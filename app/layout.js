@@ -1,7 +1,10 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Roboto_Slab } from "next/font/google"
 
-const inter = Inter({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({
+  weight: "200",
+  subsets: ["latin"]
+})
 
 export const metadata = {
   title: 'Portfolio - Timothy Karlsson'
@@ -10,7 +13,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={robotoSlab.className}>
+        <header>
+          <div className='navigation'>
+            <p className='navBlock'>Home</p>
+            <p className='navBlock'>About me</p>
+            <p className='navBlock'>Contact</p>
+          </div>
+          <h1>Portfolio</h1>
+        </header>
+        <main>          
+          {children}
+        </main>
+        <footer>Copyright Timothy Karlsson</footer>
+        </body>
     </html>
   )
 }
