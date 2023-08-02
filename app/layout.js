@@ -1,5 +1,7 @@
+"use client"
 import './globals.css'
 import { Roboto_Slab } from "next/font/google"
+import Navbar from './components/navigation'
 
 const robotoSlab = Roboto_Slab({
   weight: "200",
@@ -15,14 +17,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={robotoSlab.className}>
         <header>
-          <div className='navigation'>
-            <p className='navBlock'>Home</p>
-            <p className='navBlock'>About me</p>
-            <p className='navBlock'>Contact</p>
-          </div>
           <h1>Portfolio</h1>
+          <Navbar className="navbar" />
         </header>
-        <main>          
+        <main>
           {children}
         </main>
         <footer>Copyright Timothy Karlsson</footer>
