@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from "./navigation.module.css";
+import styles from "./navigation.module.scss";
 
 const navItems = {
   "/": {
     name: "Home",
+  },
+  "/projects": {
+    name: "Projects",
   },
   "/about": {
     name: "About Me",
@@ -22,8 +25,8 @@ export default function Navbar() {
       <div className={styles.navBar}>
         {Object.entries(navItems).map(([path, { name }]) => {
           const isActive = path === pathname;
-          const linkClassName = `${styles.navItem} ${
-            isActive ? styles.active : styles.nonActive
+          const linkClassName = `${styles["header__navItem"]} ${
+            isActive ? styles["navBar__active"] : styles["navBar__nonActive"]
           }`;
 
           return (

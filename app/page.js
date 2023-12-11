@@ -1,9 +1,9 @@
-import styles from './page.module.css'
+import styles from './page.module.scss'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1>Timothy Portfolio</h1>
+    <main className={styles.homeBody}>
+      <h2>Welcome</h2>
     </main>
   )
 }

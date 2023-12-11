@@ -1,0 +1,26 @@
+@import "../../globals.scss";
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  margin: 0;
+  width: fit-content;
+
+  &__active {
+    color: $highlight-color;
+  }
+
+  &__nonActive {
+    color: $color-text;
+  }
+
+  &__navItem {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  &>a>p {
+    margin-left: $indent__s;
+  }
+}

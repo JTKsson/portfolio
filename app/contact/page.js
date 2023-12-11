@@ -1,7 +1,9 @@
-export default function Home() {
+const Contact = () => {
   return (
     <main>
-      <h1>Contacts yo</h1>
+      <h2>Contacts yo</h2>
     </main>
   )
 }
+
+export default Contact

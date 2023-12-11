@@ -1,0 +1,11 @@
+@import "../../globals.scss";
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  padding: $indent__base;
+  
+  &__title {
+    background-color: aqua;
+  }
+}
