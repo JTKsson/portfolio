@@ -1,3 +1,29 @@
-@import "./styles/mixins";
-@import "./styles/variables";
+@import "./styles/_mixins";
+@import "./styles/_variables";
 
+// :root {
+// 	--color-layout: #19191bff;
+// 	--color-background: #0e0e10ff;
+// 	--color-text: #f0f0f0;
+// 	--light-color: #3c3d41ff;
+// 	--highlight-color: #b887e1ff;
+// 	--title-color: #ffffff;
+// }
+
+[data-theme="light"] {
+	--color-layout: rgb(231, 231, 231);
+	--color-background: rgb(151, 151, 173);
+	--color-text: #0e0e10ff;
+	--light-color: rgb(191, 194, 206);
+	--highlight-color: #b887e1ff;
+	--title-color: #000000;
+}
+
+[data-theme="dark"] {
+	--color-layout: #19191bff;
+	--color-background: #0e0e10ff;
+	--color-text: #f0f0f0;
+	--light-color: #3c3d41ff;
+	--highlight-color: #b887e1ff;
+	--title-color: #ffffff;
+}

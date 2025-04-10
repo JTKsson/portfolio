@@ -1,26 +1,26 @@
-@import "../../globals.scss";
+@import "../../styles/variables";
 
 .navBar {
-  display: flex;
-  flex-direction: row;
-  height: fit-content;
-  margin: 0;
-  width: fit-content;
+	display: flex;
+	flex-direction: row;
+	height: fit-content;
+	margin: 0;
+	width: fit-content;
 
-  &__active {
-    color: $highlight-color;
-  }
+	&__active {
+		color: var(--highlight-color);
+	}
 
-  &__nonActive {
-    color: $color-text;
-  }
+	&__nonActive {
+		color: var(--color-text);
+	}
 
-  &__navItem {
-    width: fit-content;
-    height: fit-content;
-  }
+	&__navItem {
+		width: fit-content;
+		height: fit-content;
+	}
 
-  &>a>p {
-    margin-left: $indent__s;
-  }
+	& > a > p {
+		margin-left: $indent__s;
+	}
 }

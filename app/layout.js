@@ -1,27 +1,20 @@
-"use client";
 import "./globals.scss";
-import "./globalStyles.scss"
-import { Roboto_Slab } from "next/font/google";
-import Header from "./components/header";
-import Footer from "./components/footer";
-
-const robotoSlab = Roboto_Slab({
-  weight: "200",
-  subsets: ["latin"],
-});
+import "./globalStyles.scss";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export const metadata = {
-  title: "Portfolio - Timothy Karlsson",
+	title: "Portfolio - Timothy Karlsson",
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body className={robotoSlab.className}>
-        <Header />
-        {children}
-        <Footer/>
-      </body>
-    </html>
-  );
+	return (
+		<html lang='en'>
+			<body>
+				<Header />
+				{children}
+				<Footer />
+			</body>
+		</html>
+	);
 }

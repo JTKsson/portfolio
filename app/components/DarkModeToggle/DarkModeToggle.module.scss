@@ -1,0 +1,33 @@
+.toggleContainer {
+	cursor: pointer;
+	display: inline-block;
+}
+
+.slider {
+	width: 50px;
+	height: 25px;
+	background-color: var(--light-color);
+	border-radius: 25px;
+	position: relative;
+	transition: background-color 0.3s ease;
+}
+
+.knob {
+	width: 20px;
+	height: 20px;
+	background-color: var(--color-text);
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	transition: left 0.3s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--light-color);
+
+	.slider.light & {
+		left: 25px;
+	}
+}

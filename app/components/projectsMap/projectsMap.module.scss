@@ -1,11 +1,11 @@
-@import "../../globals.scss";
+@import "../../styles/variables";
 
 .projectCard {
-  display: flex;
-  flex-direction: column;
-  padding: $indent__base;
-  
-  &__title {
-    background-color: aqua;
-  }
+	display: flex;
+	flex-direction: column;
+	padding: $indent__base;
+
+	&__title {
+		background-color: aqua;
+	}
 }

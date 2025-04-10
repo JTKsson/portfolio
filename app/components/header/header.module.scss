@@ -1,19 +1,19 @@
-@import "../../globals.scss";
+// @import "../../globals.scss";
 
 .header {
-  align-items: end;
-  background-color: $color-secondary;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  height: 100px;
-  justify-content: space-between;
-  padding: 12px;
-  width: 100%;
+	align-items: end;
+	background-color: var(--color-layout);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	height: 100px;
+	justify-content: space-between;
+	padding: 12px;
+	width: 100%;
 
-  &__title {
-    color: $color-text;
-    margin: 0;
-    width: fit-content;
-  }
+	&__title {
+		color: var(--color-text);
+		margin: 0;
+		width: fit-content;
+	}
 }
