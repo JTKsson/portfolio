@@ -1,5 +1,5 @@
 import Styles from "./projects.module.scss";
-import ProjectsMap from "../components/ProjectsMap";
+import ProjectsMap from "../components/projectsMap";
 
 const Projects = () => {
 	return (
