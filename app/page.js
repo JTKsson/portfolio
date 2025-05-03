@@ -33,8 +33,8 @@ export default function Home() {
 			<h2>Welcome</h2>
 			<ProfileImage />
 			<FerrisWheel icons={feIcons} />
-			<FerrisWheel icons={beIcons} />
-			<FerrisWheel icons={miscIcons} />
+			{/* <FerrisWheel icons={beIcons} /> */}
+			{/* <FerrisWheel icons={miscIcons} /> */}
 		</main>
 	);
 }

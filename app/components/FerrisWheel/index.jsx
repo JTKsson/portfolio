@@ -15,12 +15,16 @@ const FerrisWheel = ({ icons, radius = 120 }) => {
 							key={index}
 							className={Styles.techIconWrapper}
 							style={{
-								transform: `translate(${x}px, ${y}px)`,
+								transform: `translate(${x - 25}px, ${y - 25}px)`,
 							}}
 						>
-							<div className={Styles.techIcon}>
-								<img src={icon} alt={`tech-${index}`} width='40' height='40' />
-							</div>
+							<img
+								className={Styles.techIcon}
+								src={icon}
+								alt={`tech-${index}`}
+								width='50'
+								height='50'
+							/>
 						</div>
 					);
 				})}
