@@ -1,5 +1,5 @@
 import DarkModeToggle from "../DarkModeToggle";
-import Navbar from "../Navigation";
+import Navbar from "../navigation";
 import Styles from "./header.module.scss";
 
 const Header = () => {

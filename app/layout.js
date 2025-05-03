@@ -1,7 +1,7 @@
 import "./globals.scss";
 import "./globalStyles.scss";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/header";
+import Footer from "./components/footer";
 import { ThemeProvider } from "./providers/ThemeContext";
 
 export const metadata = {
