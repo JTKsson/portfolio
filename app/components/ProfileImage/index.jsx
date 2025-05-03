@@ -9,9 +9,11 @@ const ProfileImage = () => {
 	return (
 		<Image
 			src={theme === "dark" ? "/timothy.jpg" : "/blinded.png"}
+			style={{ width: "auto", height: "300px" }}
 			width={250}
 			height={300}
 			alt='Profile Image'
+			objectFit='contain'
 		/>
 	);
 };
